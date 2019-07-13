@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jogao da Velha</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <div class="container-config">
+      <input
+        class="input-jogador input-jogador1"
+        type="text"
+        placeholder="Jogador 1"
+      />
+      <div class="wrap-input-jogador">
+        <input
+          class="input-jogador input-jogador2"
+          type="text"
+          placeholder="Jogador 2"
+        />
+        <div class="button-bot">
+          <div class="button-bot-state"></div>
+        </div>
+        <h1 class="titulos">Tipo de partida</h1>
+        <div class="wrap-tipo-partida">
+          <span class="md">Melhor de 3</span>
+          <div class="button-md">
+            <div class="button-md-state"></div>
+          </div>
+          <span class="md">Melhor de 5</span>
+        </div>
+      </div>
+      <div class="wrap-button-jogar">
+        <span class="button-jogar-text">Jogar</span>
+      </div>
+      <h2 class="titulos">Historico de partidas</h2>
+      <div class='wrap-cenario-vencedor'>
+            <div class="wrap-cenario-vencedor-miniboard"></div>
+      </div>
+    </div>
+    <div class="container-board">
+      <div class="placar">
+        <span class="placar-jogador placar-jogador-1">0</span>
+        <div class="text-placar">
+          <h1 class="placar-titulo">PLACAR</h1>
+          <span>Nome jogador</span>
+        </div>
+        <span class="placar-jogador placar-jogador-2">0</span>
+      </div>
+      <div class="wrap-board">
+        <div class="campos campo1 campo1-board"></div>
+        <div class="campos campo2 campo2-board"></div>
+        <div class="campos campo3 campo3-board"></div>
+        <div class="campos campo4 campo4-board"></div>
+        <div class="campos campo5 campo5-board"></div>
+        <div class="campos campo6 campo6-board"></div>
+        <div class="campos campo7 campo7-board"></div>
+        <div class="campos campo8 campo8-board"></div>
+        <div class="campos campo9 campo9-board"></div>
+      </div>
+    </div>
+    <div class="container-historico">
+      <h2 class="titulos">Histórico de jogadas</h2>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

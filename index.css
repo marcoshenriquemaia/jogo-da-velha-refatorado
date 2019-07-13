@@ -1,0 +1,336 @@
+body{
+    --primaria:#0097e6;
+    --secundaria: #6a6a6a;
+}
+.container-config {
+  width: 30%;
+  margin-right: 1em;
+  /* min-width: 400px; */
+}
+
+.input-jogador {
+  border: none;
+  padding: 0.5em;
+  padding-right: 0;
+  border-radius: 10px;
+  font-size: 1.25em;
+  text-align: start 1em;
+  margin-top: 0.4em;
+  width: 100%;
+}
+.input-jogador::placeholder {
+  color: var(--primaria);
+}
+.wrap-input-jogador {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.button-bot {
+  width: 80px;
+  height: 30px;
+  background-color: var(--primaria);
+  position: absolute;
+  top: 0;
+  transform: translateY(50%);
+  right: 3px;
+  border-radius: 25em;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  box-sizing: border-box;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.button-bot:hover {
+  background-color: var(--secundaria);
+}
+.button-bot-state {
+  transition: ease-in-out;
+  transition-duration: 0.3s;
+  width: 1.25em;
+  height: 1.25em;
+  border-radius: 25em;
+  background-color: #fff;
+  transform: translateX(250%);
+}
+.button-bot-state2 {
+  transform: translateX(0);
+}
+.titulos {
+  font-size: 1.25em;
+  color: #fff;
+  text-align: center;
+  margin: 1em;
+}
+.wrap-tipo-partida {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+.button-md {
+  width: 80px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 25em;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  box-sizing: border-box;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.button-md-state {
+  transition: ease-in-out;
+  transition-duration: 0.3s;
+  width: 1.25em;
+  height: 1.25em;
+  border-radius: 25em;
+  background-color: #fff;
+  transform: translateX(0%);
+}
+.button-md-state2 {
+  transform: translateX(240%);
+}
+.md {
+  color: #fff;
+}
+.wrap-button-jogar {
+  width: 70%;
+  height: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #47f297;
+  cursor: pointer;
+  transform: translateX(25%);
+  border-radius: 10px;
+}
+.button-jogar-vermelho {
+  background: red;
+}
+.button-jogar-text {
+  color: #fff;
+}
+.box-vencedor {
+  width: 11em;
+  height: 4em;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.box-vencedor-vencedor {
+  color: #47f297;
+  font-size: 1.6em;
+  margin-bottom: 5px;
+  transform: translateX(15px);
+}
+.box-vencedor-nome {
+  font-size: 1.25em;
+  transform: translateX(15px);
+}
+.wrap-cenario-vencedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  width: 90%;
+  height: 50%;
+}
+.wrap-cenario-vencedor-miniboard {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0.5em;
+}
+.mini-board {
+  width: 70px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mini-campos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1em;
+  height: 1em;
+  background-color: #fff;
+  margin: 0.1em;
+  border-radius: 3px;
+}
+.wrap-mini-bord {
+  display: flex;
+}
+.text-cenario {
+  color: #fff;
+}
+.button-reiniciar {
+  width: 70%;
+  height: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+  transform: translateX(25%);
+  border-radius: 10px;
+}
+.container-board {
+  width: 38%;
+  margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* min-width: 450px; */
+  margin-top: 2em;
+  margin-bottom: 5em;
+}
+.wrap-board {
+  display: flex;
+  width: 490px;
+  flex-wrap: wrap;
+  background-color: #fff;
+  position: relative;
+}
+.campos {
+  width: 9.375rem;
+  height: 9.375rem;
+  background-color: var(--primaria);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8em;
+  box-sizing: border-box;
+  font-weight: 700;
+  color: var(--secundaria);
+  cursor: pointer;
+  user-select: none;
+}
+.campos2 {
+  color: red;
+}
+.campos3 {
+  color: var(--secundaria);
+}
+.campo1-board {
+  margin: 0px 10px 10px 0px;
+}
+.campo2-board {
+  margin: 0px 10px 10px 10px;
+}
+.campo3-board {
+  margin: 0px 0px 10px 10px;
+}
+.campo4-board {
+  margin: 10px 10px 10px 0px;
+}
+.campo5-board {
+  margin: 10px;
+}
+.campo6-board {
+  margin: 10px 0px 10px 10px;
+}
+.campo7-board {
+  margin: 10px 10px 0px 0px;
+}
+.campo8-board {
+  margin: 10px 10px 0px 10px;
+}
+.campo9-board {
+  margin: 10px 0px 0px 10px;
+}
+.placar {
+  width: 75%;
+  height: 10%;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3em;
+  padding: 1em;
+}
+.placar-jogador {
+  width: 30%;
+  height: 100%;
+  font-size: 3em;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.text-placar {
+  height: 90%;
+  color: var(--primaria);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.placar-titulo {
+  font-weight: 700;
+  font-size: 1.25em;
+}
+.container-historico {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(5%);
+  /* min-width: 400px; */
+}
+.box-historico {
+  width: 75%;
+  height: 6%;
+  background-color: #fff;
+  margin: 1%;
+  border-radius: 0.8em;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5em;
+  cursor: pointer;
+  user-select: none;
+}
+.letra-jogador {
+  width: 10%;
+  height: 80%;
+  font-size: 3em;
+  font-weight: 700;
+  color: var(--secundaria);
+}
+.wrap-jogador-local {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-15%);
+  margin-top: 0.4em;
+  align-items: center;
+}
+.text-nome-jogador {
+  color: var(--secundaria);
+}
+.text-local-jogada {
+  color: var(--primaria);
+}
+
+
+/* .pisca{
+  animation: pisca .1s alternate 0s infinite linear;
+}
+
+@keyframes pisca {
+  from {
+    color:  red }
+  to {
+    color: white  }
+} */

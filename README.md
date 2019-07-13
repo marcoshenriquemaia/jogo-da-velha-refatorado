@@ -1,2 +1,1 @@
-# jogo-da-velha-refatorado
-Construindo o Jogo da Velha usando o ES6
+# Jogo-da-velha
